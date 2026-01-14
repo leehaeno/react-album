@@ -42,7 +42,7 @@ function CommonSearchBar() {
         <div className={styles.searchBar}>
             <div className={styles.searchBar__search}>
                 <input id="search" type="text" placeholder="찾으실 이미지를 검색하세요." className={styles.searchBar__search__input} value={text} onChange={onChange} onKeyDown={heandleKeyDown}/>
-                <img src="/src/assets/icons/icon-search.svg" alt="검색"  onClick={onSearch}/>
+                <img src="/images/icons/icon-search.svg" alt="검색"  onClick={onSearch}/>
             </div>
         </div>
     )
