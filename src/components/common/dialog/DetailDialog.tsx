@@ -45,7 +45,7 @@ function DetailDialog({ data, handleDialog }: Props) {
                             <span
                                 className="material-symbols-outlined"
                                 style={{
-                                    fontSize: '16px',
+                                    fontSize: '20px',
                                     color: isBookmarked ? 'red' : 'inherit',
                                 }}
                             >
@@ -53,12 +53,20 @@ function DetailDialog({ data, handleDialog }: Props) {
                             </span>
                             북마크
                         </button>
+                         <a 
+                            className={styles.bookmark__button}
+                            href={data.links.download} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >
+                            다운로드
+                        </a>
                     </div>
                 </div>
                 <div className={styles.container__dialog__body}>
                     <img
-                        src={data.urls.small}
-                        alt="상세이미지"
+                        src={data.urls.regular}
+                        alt={data.alt_description}
                         className={styles.image}
                     />
                 </div>
